@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f5f6fa;
+    padding: 30px;
+}
+
+/* Main box */
+.container {
+    max-width: 850px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+}
+
+/* Heading */
+h1 {
+    margin-bottom: 15px;
+}
+
+/* Filter */
+.filter-box {
+    margin-bottom: 25px;
+}
+
+.filter-box label {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.filter-box select {
+    padding: 8px 15px;
+    font-size: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* Product grid */
+.products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* Card */
+.card {
+    border: 1px solid #dde1f1;
+    padding: 18px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+/* Badges */
+.badge {
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    color: white;
+}
+
+/* Category colors */
+.badge.electronics {
+    background: #2563eb;
+}
+
+.badge.clothing {
+    background: #93c5fd;
+}
